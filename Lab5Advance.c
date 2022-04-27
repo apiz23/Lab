@@ -102,12 +102,12 @@ int main(){
         char otherSec[][max] = {"C) PENDAPATAN KASAR SETAHUN","PENDAPATAN (A) - PERBELANJAAN (B)",
                                 "D) PENDAPATAN KASAR SETAHUN","PENDAPATAN YANG DIKIRA ZAKAT x 0.025 =",
                                 "E) JUMLAH ZAKAT SEBULAN","UMLAH ZAKAT SETAHUN / 12 = "};
-        float valueOth[3] = {pendapatan, zakatSetahun,zakatSebulan};
+        float varOth[3] = {pendapatan, zakatSetahun,zakatSebulan};
 
         for(int i = 0, j = 0;i < 6; i+=2,j++){
             printf("\n%s\n",otherSec[i]);
             printf("%s\n",otherSec[i+1]);
-            printf("%0.2f\n",valueOth[j]);
+            printf("%0.2f\n",varOth[j]);
         }
         printf("\n\t ZAKAT YANG WAJIB");
         printf("\n\t RM %0.2f SEBULAN",zakatSebulan);
