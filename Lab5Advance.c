@@ -124,4 +124,3 @@ int main(){
     printf("Jumlah zakat yang diterima MAIJ : %0.2f\n",sumZakatSetahun);
     printf("Bilangan pembayar zakat : %d",user);
 }
-
