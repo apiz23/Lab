@@ -11,6 +11,7 @@ int main(void){
     int answ = 0;
 
     do{
+        /* This is the code that is used to get the username and password from the user. */
         printf("Enter username : ");
         scanf("%s",user);
         printf("Enter password : ");
