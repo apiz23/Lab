@@ -19,7 +19,8 @@ int main(void){
             pass[i] = getch();
             printf("*");
         }
-
+        /* Comparing the user input with the username and password. If the user input is the same as
+        the username and password, it will return 1. If not, it will return 0. */
         if(strcmp(user,username) == 0 && strcmp(pass,password) == 0){
             answ = 1;
         }else{
