@@ -8,15 +8,11 @@ int main(){
     printf("How many number do you want to insert : ");
     scanf("%d",&no);
     for(int i = 0; i < no; i++){
-        printf("Enter the number[%d] : ",i+1);
-        checking = scanf("%f",&number);
-        fflush(stdin);
-        while(checking != 1){
-            printf("Sila masukkan nombor \n");
-            printf("Enter the number[%d] : ",i+1);
+        do{
+            printf("Enter an integer number [%d] : ",i+1);
             checking = scanf("%f",&number);
             fflush(stdin);
-        }
+        }while(checking != 1);
         if((int)number % 2 == 1){
             countOdd++;
         }else if(number < 0){
