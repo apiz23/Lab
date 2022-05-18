@@ -9,7 +9,7 @@ int main(){
     int gendAns,countMale = 0, countFemale = 0;
 
     int i = 0;
-    while(i < 3){
+    while(i < 30){
         printf("Enter whether student[%d] is male or female [1 : male, 2 : female] = ",i+1);
         scanf("%d",&gendAns);
         if(gendAns == 1){
