@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define max 2
+#define max 182
 #define totalAchievement t_A
 
 int main(){
