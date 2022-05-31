@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define max 182
+#define max 2
 
 int main(){
 
@@ -25,29 +25,30 @@ int main(){
     puts("\n--------------------------------------------------");
     puts("Student \tMark \tGrade \tAchievement Level");
     puts("--------------------------------------------------");
-    for(int i = 0,j; i < max; i++){
+    for(int i = 0,j,k; i < max; i++){
         if(markStd[i] >= 85){
-            j = 0,countGrade[0]++,totalAchievement[0]++;
+            j = 0,k = 0,countGrade[j]++,totalAchievement[k]++;
         }else if(markStd[i] >= 80){
-            j = 1,countGrade[1]++,totalAchievement[0]++;
+            j = 1,k = 0,countGrade[j]++,totalAchievement[k]++;
         }else if(markStd[i] >= 75){
-            j = 2,countGrade[2]++,totalAchievement[0]++;
+            j = 2,k = 0,countGrade[j]++,totalAchievement[k]++;
         }else if(markStd[i] >= 70){
-            j = 3,countGrade[3]++,totalAchievement[1]++;}
-        else if(markStd[i] >= 65){j = 4,countGrade[4]++,totalAchievement[1]++;
+            j = 3,k = 1,countGrade[j]++,totalAchievement[k]++;
+        }else if(markStd[i] >= 65){
+            j = 4,k = 1,countGrade[j]++,totalAchievement[k]++;
         }else if(markStd[i] >= 60){
-            j = 5,countGrade[5]++,totalAchievement[1]++;
+            j = 5,k = 1,countGrade[j]++,totalAchievement[k]++;
         }else if(markStd[i] >= 55){
-            j = 6,countGrade[6]++,totalAchievement[2]++;
+            j = 6,k = 2,countGrade[j]++,totalAchievement[k]++;
         }else if(markStd[i] >= 50){
-            j = 7,countGrade[7]++,totalAchievement[2]++;
+            j = 7,k = 2,countGrade[j]++,totalAchievement[k]++;
         }else if(markStd[i] >= 45){
-            j = 8,countGrade[8]++,totalAchievement[2]++;
+            j = 8,k = 2,countGrade[j]++,totalAchievement[k]++;
         }else if(markStd[i] >= 40){
-            j = 9,countGrade[9]++,totalAchievement[3]++;
-        }else{j = 10,countGrade[10]++,totalAchievement[4]++;}
-        
-        printf("%d \t\t%.2lf \t %s \t %s\n",i+1, markStd[i],grade[j],achievement[j]);
+            j = 9,k = 3,countGrade[j]++,totalAchievement[k]++;
+        }else{
+            j = 10,k = 4,countGrade[j]++,totalAchievement[k]++;
+        }printf("%d \t\t%.2lf \t %s \t %s\n",i+1, markStd[i],grade[j],achievement[k]);
     }
 
     puts("\n--------------------------------------------------");
