@@ -28,7 +28,7 @@ int main(){
         else if(empSalary < 0)
             puts("\nPlease enter a valid number !");
     }while(checking != 1 || empSalary < 0);
-
+pale buto
     do{
         printf("Enter employee age: ");
         checking = scanf("%d",&empAge);
