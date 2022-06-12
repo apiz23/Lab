@@ -15,8 +15,8 @@ int longTerm(int a){
             return (a/24)*11 + (a%24)*2;
         else if (a%24 >= 6)
             return ((a/24)+1)*11;
-		else
-			return 60;
+	else
+	    return 60;
     }
     //more than one WEEK
     else if(a%24 == 1 || a%24 == 2)
