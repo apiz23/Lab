@@ -33,8 +33,10 @@ float shortTerm(float b){
     if(b < 1){
         if(b <= ((float)1/3))
             return 0; 
-    	else
+    	else if(b <= (float)2/3)
             return 2;
+        else
+            return 3;
     }
     // less than 7 hour
     else if(b <= 6)
