@@ -3,12 +3,9 @@
 
 int longTerm(int a){
     //check hour in a DAY
-    if(a <= 24){
-        if(a <= 5)
-            return a * 2; 
-    	else
-            return 11;
-    }
+    if(a <= 24)
+        return a <= 5? a * 2: 11;
+        
     //check for one WEEK or less
     else if(a <= 168){
         if(a <= 122 && a%24 <= 5)
@@ -67,8 +64,6 @@ int main(){
     }while(checking != 1 || hours < 0);
 
     puts("");
-    printf("Long term parking: $ %d\n",longTerm(ceil(hours)));
-    printf("Short term parking: $ %.f",shortTerm(hours));
-
+    printf("Long term parking: $ %d\nShort term parking: $ %.f",longTerm(ceil(hours)),shortTerm(hours));
     return 0;
 }
