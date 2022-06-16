@@ -10,7 +10,7 @@ int longTerm(int a){
     else if(a <= 168){
         if(a <= 122 && a%24 <= 5){return (a/24)*11 + (a%24)*2;}
         else if (a%24 >= 6){return ((a/24)+1)*11;}
-		else{return 60;}
+	else{return 60;}
     }
     //more than one WEEK
     else if(a%24 == 1 || a%24 == 2){return 60 + (a/24-7)*4 + (a%24)*2;}
